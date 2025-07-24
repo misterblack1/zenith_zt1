@@ -4,6 +4,14 @@ The Zenith ZT-1 was a device that came out around 1981 that looked like a keyboa
 
 This can be considered to be like a WebTV but from 1981.
 
+## ROMs
+
+I dumped the ROMs from my ZT-1 (444-187 U114 ROM 2732.bin & 444-188 U113 ROM 2732.bin) and Sark has dumped the ROMs from his ZT-11 (ztx-11_U113 2732.bin & ztx-11_U114 2732.bin)
+
+## Differences between machines
+
+The ZT-1 has a 300 baud modem. The ZT-10 has a RS232 serial port in it, and no model. The ZT-11 has both the modem and the serial port. The Serial board in the ZT-11 seems to be an afterthought, with flying leads bodged onto four points. This board has two ICs that convert TTL serial to RS232 (and vice verse) and also it has a 555 timer that is likely to create a negative voltage rail that RS232 would use. I theorize any cheap TTL to RS232 adapter (with something like a MAX232) would work perfectly in place of this.  It is unknown if the ROM code is different to support this extra serial port. Also, on the underside of the main board on the ZT-11 is a board providing the CPU with a new clock source. The frequency appears to be higher than the original ZT-1, perhaps to offer different baud rates, although there appear to be no baud rate settings on the setup screen.
+
 ## ZT-1/ZT-10/ZT-11 PSU
 
 Beware of two tanatalum caps on the main PCB that can short, which will damage the external PSU.
@@ -20,6 +28,6 @@ DE9
 8 N/C         |
 9 Red --------+
 ```
-Fuse is inside the PSU, and you must hammer it to open it.
+Fuse is inside the PSU, and you must hammer the PSU case around the seam to open it. This is slightly destructive.
 
 Current draw on 15VAC is about 850ma while running. Forms ~12VDC after bridge rectifier inside terminal.
