@@ -23,12 +23,12 @@ DE9
 1 Black --+ 15VAC (Black wire is fused, 3A 250V) 
 2 N/C     | 0.66ohms
 3 N/C     |
-4 White --|---+ 11 ohmx
-5 Green --|---+ Center tap of 31VAC
+4 White --|---+ 11 ohms
+5 Green --|---+ 11 ohms
 6 Brown --+   |
-7 N/C         | 11 ohms
+7 N/C         |
 8 N/C         |
-9 Red --------+
+9 Red --------+ Cebter tap - 31VAC total
 ```
 Fuse is inside the PSU, and you must hammer the PSU case around the seam to open it. This is slightly destructive. Current draw on 15VAC is about 850ma while running. This creates ~12VDC after bridge rectifier inside terminal.
 
