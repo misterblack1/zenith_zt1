@@ -14,6 +14,10 @@ The ZT-1 has a 300 baud modem. The ZT-10 has a RS232 serial port but no modem. T
 
 Also, on the underside of the main board on Sark's ZT-11 is a board providing the CPU with a new clock source. The frequency appears to be higher than the original ZT-1, perhaps to offer different baud rates, although there appear to be no baud rate settings on the setup screen.
 
+## Service manual
+
+Big Al has provided the service manual for the ZT-1. Unfortunately it did not include the full schematic, as this appears to have been lost. There is still a lot of useful information in the manual. 
+
 ## ZT-1/ZT-10/ZT-11 PSU
 
 Beware of two tanatalum caps on the main PCB that can short, which will damage the external PSU.
@@ -42,3 +46,4 @@ OUTPUT: 31.0 V.R.M.S. @ .020 A.D.C
 
 Thanks to Sark for taking photos and dumping the ROMs on this ZT-11.
 Thanks to Andrew C for sending PSU information
+Thanks to Big Al for providing the service manual
