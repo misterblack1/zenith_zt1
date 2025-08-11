@@ -1,4 +1,4 @@
-# Zenith ZT-1 (also the ZT-10, ZT-11 and ZTX-1, ZTX-10, ZTX-11)
+# Zenith ZT-1 (also ZT-10, ZT-11, ZTX-1, ZTX-10, and ZTX-11)
 
 The Zenith ZT-1 was a device that came out around 1981 that looked like a keyboard. It was designed to be used by someone who wanted to connect to online services via the internal 300 baud modem without the need of a computer. You would connect a monochrome composite video monitor and interface with it via an internal menu structure held in ROM. The system uses an Intel 8031 MCU (this is a variant with 128 bytes of internal RAM but no internal ROM) as the main CPU, it has 8K of ROM on two 2732 ICs (dumped), 1K of SRAM (via two 2114 chips), a single 2Kx8 6116 SRAM likely used as video RAM and a 2K Chargen EPROM (2516.) An Intel CRTC is used to generate the video sync and timing. The system also has a NiCD battery that can leak which appears to be used to save phone numbers and settings to a single 2114 SRAM. (NEC D444C in this machine.)
 
@@ -7,6 +7,8 @@ This can be considered to be like a WebTV but from 1981.
 ## ROMs
 
 I dumped the ROMs from my ZT-1 (444-187 U114 ROM 2732.bin & 444-188 U113 ROM 2732.bin) and Sark has dumped the ROMs from his ZT-11 (ztx-11_U113 2732.bin & ztx-11_U114 2732.bin)
+
+[The ROMs have been disassembled and anotated by my viewer Dan.](https://github.com/misterblack1/zenith_zt1/blob/main/ZT1%20ROM%20Dissassembly.lst)
 
 ## Differences between machines
 
@@ -18,9 +20,15 @@ Also, on the underside of the main board on Sark's ZT-11 is a board providing th
 
 Big Al has provided the service manual for the ZT-1. Unfortunately it did not include the full schematic, as this appears to have been lost. There is still a lot of useful information in the manual. 
 
+[Service manual has been uploaded to Archive.org](https://archive.org/details/zenith-sm-zt-1-service-manual)
+
+## Schematics
+
+Thanks for Dan, we have a [complete recreation of the ZT-1 schematics](https://github.com/misterblack1/zenith_zt1/blob/main/ZT1%20Schematics/ZX1%20Schematic.pdf). This was created entirely using X-ray images from the service manual along with photographics. There may be errors, but it seems to be very accurate.
+
 ## ZT-1/ZT-10/ZT-11 PSU
 
-Beware of two tanatalum caps on the main PCB that can short, which will damage the external PSU.
+Beware of two tanatalum caps on the main PCB that can short, which will damage the external PSU. Additional inforamation about the PSU can be found in the [Service manual](https://archive.org/details/zenith-sm-zt-1-service-manual).
 
 ```
 DE9
@@ -47,3 +55,4 @@ OUTPUT: 31.0 V.R.M.S. @ .020 A.D.C
 Thanks to Sark for taking photos and dumping the ROMs on this ZT-11.
 Thanks to Andrew C for sending PSU information
 Thanks to Big Al for providing the service manual
+Thanks to Dan for recreating the entire schematics for the ZT-1 in KiCad and hand dissembling the ROM code
